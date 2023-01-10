@@ -1,4 +1,5 @@
 import SwiftUI
+import CachedAsyncImage
 
 struct ImageLoadingView: View {
     
@@ -11,7 +12,8 @@ struct ImageLoadingView: View {
 //            .frame(height: size)
         
         
-        AsyncImage(url: URL(string: urlString)) { phase in
+        
+        CachedAsyncImage(url: URL(string: urlString)) { phase in
             switch phase {
                 case .empty:
                     ProgressView()

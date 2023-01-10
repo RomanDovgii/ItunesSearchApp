@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A841F93296D858400023EA9 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A841F92296D858400023EA9 /* CachedAsyncImage */; };
 		3AE6313D2965E43400A52099 /* Itunes_SearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6313C2965E43400A52099 /* Itunes_SearchApp.swift */; };
 		3AE6313F2965E43400A52099 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6313E2965E43400A52099 /* ContentView.swift */; };
 		3AE631412965E43500A52099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AE631402965E43500A52099 /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A841F93296D858400023EA9 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +250,9 @@
 			dependencies = (
 			);
 			name = "Itunes Search";
+			packageProductDependencies = (
+				3A841F92296D858400023EA9 /* CachedAsyncImage */,
+			);
 			productName = "Itunes Search";
 			productReference = 3AE631392965E43400A52099 /* Itunes Search.app */;
 			productType = "com.apple.product-type.application";
@@ -276,6 +281,9 @@
 				Base,
 			);
 			mainGroup = 3AE631302965E43400A52099;
+			packageReferences = (
+				3A841F91296D858400023EA9 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = 3AE6313A2965E43400A52099 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -533,6 +541,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A841F91296D858400023EA9 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A841F92296D858400023EA9 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A841F91296D858400023EA9 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3AE631472965E43500A52099 /* Itunes_Search.xcdatamodeld */ = {
